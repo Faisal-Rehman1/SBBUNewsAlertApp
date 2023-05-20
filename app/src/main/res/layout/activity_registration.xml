@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/primary_color_bg"
+    tools:context=".Login_Registration.Registration_Activity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/sign_up"
+        app:layout_constraintBottom_toTopOf="@+id/register_Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/register_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:background="@drawable/edit_text_design"
+        android:gravity="center_vertical"
+        android:hint="Email"
+        android:layout_marginTop="@dimen/_45sdp"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/_10sdp"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintBottom_toTopOf="@+id/register_Password"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/register_Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/edit_text_design"
+        android:gravity="center_vertical"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="@dimen/_10sdp"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintBottom_toTopOf="@+id/register_ConfrimPass"
+        app:layout_constraintEnd_toEndOf="@+id/register_Email"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/register_Email"
+        app:layout_constraintTop_toBottomOf="@+id/register_Email" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/register_ConfrimPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:background="@drawable/edit_text_design"
+        android:gravity="center_vertical"
+        android:hint="Confrim Password"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:inputType="textPassword"
+        android:padding="@dimen/_10sdp"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_registration"
+        app:layout_constraintEnd_toEndOf="@+id/register_Password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/register_Password"
+        app:layout_constraintTop_toBottomOf="@+id/register_Password" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_registration"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_marginBottom="39dp"
+        android:background="@drawable/primary_box"
+        android:text="Sign up"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="@+id/register_ConfrimPass"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toStartOf="@+id/register_ConfrimPass"
+        app:layout_constraintTop_toBottomOf="@+id/register_ConfrimPass" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_registration"
+        app:layout_constraintStart_toStartOf="@+id/btn_registration"
+        app:layout_constraintTop_toBottomOf="@+id/btn_registration">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/SignUp_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an Account?"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btn_registration"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_registration"
+            app:layout_constraintTop_toBottomOf="@+id/btn_registration"
+            app:layout_constraintVertical_bias="0.389" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_signIn_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" SIGN IN "
+            android:textColor="#0189ff"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btn_registration"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toStartOf="@+id/btn_registration"
+            app:layout_constraintTop_toBottomOf="@+id/btn_registration"
+            app:layout_constraintVertical_bias="0.243" />
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SBBU NEWS ALERTS</string>
+    <string name="video_news">Video News</string>
+    <string name="image_news">Image News</string>
+    <string name="audio_news">Audio News</string>
+    <string name="upload_gallery_image">Upload Gallery Image</string>
+    <string name="create_post">Create post</string>
+
+
+    <string name="admin_gmail">sbbunewsalert@gmail.com</string>
+</resources>

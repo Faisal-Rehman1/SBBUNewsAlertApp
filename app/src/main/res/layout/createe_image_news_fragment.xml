@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/primary_color_bg"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/uplaod_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="Choose Image"
+            android:textColor="@color/bgtint"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintBottom_toTopOf="@+id/Image_newsImg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UnknownId" />
+
+
+        <ImageView
+            android:id="@+id/Image_newsImg"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/add_post"
+            android:backgroundTint="@color/bgtint"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/Image_newsTitle"
+            app:layout_constraintEnd_toEndOf="@+id/uplaod_image"
+            app:layout_constraintStart_toStartOf="@+id/uplaod_image"
+            app:layout_constraintTop_toBottomOf="@+id/uplaod_image" />
+
+        <EditText
+            android:id="@+id/Image_newsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:background="@drawable/edit_text_design"
+            android:hint="Image Title"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintBottom_toTopOf="@+id/Image_newsDescription"
+            app:layout_constraintEnd_toEndOf="@+id/Image_newsImg"
+            app:layout_constraintStart_toStartOf="@+id/Image_newsImg"
+            app:layout_constraintTop_toBottomOf="@+id/Image_newsImg" />
+
+        <EditText
+            android:id="@+id/Image_newsDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:background="@drawable/edit_text_design"
+            android:hint="Discription"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintBottom_toTopOf="@+id/Image_postNews"
+            app:layout_constraintEnd_toEndOf="@+id/Image_newsTitle"
+            app:layout_constraintStart_toStartOf="@+id/Image_newsTitle"
+            app:layout_constraintTop_toBottomOf="@+id/Image_newsTitle" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Image_postNews"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/primary_box"
+            android:text="Upload"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Image_newsDescription" />
+
+        <ProgressBar
+            android:id="@+id/ImageProgressBar"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/Image_postNews"
+            app:layout_constraintStart_toStartOf="@+id/Image_postNews"
+            app:layout_constraintTop_toBottomOf="@+id/Image_postNews" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

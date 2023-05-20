@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard.Create_GalleryImage_Activity"
+    android:background="@drawable/primary_color_bg"
+    android:padding="@dimen/_10sdp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/Gallery_uploadIMG"
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="@dimen/_160sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/add_post"
+            android:backgroundTint="@color/bgtint"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/edit_imageTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_imageTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="26dp"
+            android:background="@drawable/edit_text_design"
+            android:hint="Gallery Image Title"
+            android:padding="@dimen/_12sdp"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintBottom_toTopOf="@+id/Gallery_saveBtn"
+            app:layout_constraintEnd_toEndOf="@+id/Gallery_uploadIMG"
+            app:layout_constraintStart_toStartOf="@+id/Gallery_uploadIMG"
+            app:layout_constraintTop_toBottomOf="@+id/Gallery_uploadIMG" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Gallery_saveBtn"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/primary_box"
+            android:text="Upload Image"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintBottom_toTopOf="@+id/GalleryImage_ProgressBar"
+            app:layout_constraintEnd_toEndOf="@+id/edit_imageTitle"
+            app:layout_constraintStart_toStartOf="@+id/edit_imageTitle"
+            app:layout_constraintTop_toBottomOf="@+id/edit_imageTitle" />
+
+        <ProgressBar
+            android:id="@+id/GalleryImage_ProgressBar"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/Gallery_saveBtn"
+            app:layout_constraintStart_toStartOf="@+id/Gallery_saveBtn"
+            app:layout_constraintTop_toBottomOf="@+id/Gallery_saveBtn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

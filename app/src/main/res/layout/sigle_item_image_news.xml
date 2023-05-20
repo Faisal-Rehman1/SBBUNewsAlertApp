@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_3sdp"
+    android:background="@color/white"
+    android:elevation="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_7sdp"
+    app:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/btn__delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/maincolor"
+            android:drawableEnd="@drawable/ic_delete"
+            android:padding="@dimen/_5sdp"
+            />
+
+        <com.ortiz.touchview.TouchImageView
+            android:id="@+id/newssImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/ic_news_error" />
+
+
+        <TextView
+            android:id="@+id/txttnewsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:hint="New Title"
+            android:text="Title"
+            android:textColor="@color/bgtint"
+            android:textSize="@dimen/_18ssp"
+            android:paddingLeft="@dimen/_8sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txttDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:hint="description"
+            android:scrollHorizontally="false"
+            android:paddingLeft="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txttTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="12 : 00 AM"
+                android:paddingStart="8dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/texttDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="12 - 2 - 2022"
+                android:paddingEnd="8dp"
+                android:textAlignment="textEnd"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

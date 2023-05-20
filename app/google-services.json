@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "159705276420",
+    "project_id": "sbbu-news-alerts-4daa2",
+    "storage_bucket": "sbbu-news-alerts-4daa2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159705276420:android:07d66c6618d84d9ab85551",
+        "android_client_info": {
+          "package_name": "com.example.sbbunewsalerts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159705276420-o7jousvt76veo08546e1arsemaf2aogg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLogbYy9AZkCrX-5eByw7hGyt8Ufug7vg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159705276420-o7jousvt76veo08546e1arsemaf2aogg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

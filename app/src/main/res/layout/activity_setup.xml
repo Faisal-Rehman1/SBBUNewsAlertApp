@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/primary_color_bg"
+    android:layout_height="match_parent"
+    tools:context=".Login_Registration.SetupActivity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/setup_userPrifile"
+        android:layout_width="210dp"
+        android:layout_height="183dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/profile"
+        app:layout_constraintBottom_toTopOf="@+id/setup_UserName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/setup_UserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/edit_text_design"
+        android:gravity="center_vertical"
+        android:hint="Username"
+        android:inputType="text"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/setup_UserPhone"
+        app:layout_constraintEnd_toEndOf="@+id/setup_userPrifile"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="@+id/setup_userPrifile"
+        app:layout_constraintTop_toBottomOf="@+id/setup_userPrifile" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/setup_UserPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/edit_text_design"
+        android:gravity="center_vertical"
+        android:hint="Phone"
+        android:inputType="phone"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/setup_UserDept"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/setup_UserName"
+        app:layout_constraintTop_toBottomOf="@+id/setup_UserName" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/setup_UserDept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/edit_text_design"
+        android:gravity="center_vertical"
+        android:hint="Department"
+        android:inputType="text"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/setup_saveBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/setup_UserPhone"
+        app:layout_constraintTop_toBottomOf="@+id/setup_UserPhone" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/setup_saveBtn"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="140dp"
+        android:background="@drawable/primary_box"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/setup_UserDept"
+        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintStart_toStartOf="@+id/setup_UserDept"
+        app:layout_constraintTop_toBottomOf="@+id/setup_UserDept" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

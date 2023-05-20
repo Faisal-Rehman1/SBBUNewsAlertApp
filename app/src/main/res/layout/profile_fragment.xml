@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/primary_color_bg"
+    >
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:background="@drawable/profile_design"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Circle_profileImge"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_110sdp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/profile"
+        app:layout_constraintBottom_toTopOf="@+id/userName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="Name"
+        android:textAlignment="center"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/userPhone"
+        app:layout_constraintEnd_toEndOf="@+id/Circle_profileImge"
+        app:layout_constraintStart_toStartOf="@+id/Circle_profileImge"
+        app:layout_constraintTop_toBottomOf="@+id/Circle_profileImge" />
+
+    <TextView
+        android:id="@+id/userPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Phone"
+        android:textAlignment="center"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/userGmail"
+        app:layout_constraintEnd_toEndOf="@+id/userName"
+        app:layout_constraintStart_toStartOf="@+id/userName"
+        app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+    <TextView
+        android:id="@+id/userGmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Gmail"
+        android:textAlignment="center"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/userDept"
+        app:layout_constraintEnd_toEndOf="@+id/userPhone"
+        app:layout_constraintStart_toStartOf="@+id/userPhone"
+        app:layout_constraintTop_toBottomOf="@+id/userPhone" />
+
+    <TextView
+        android:id="@+id/userDept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:text="Department"
+        android:textAlignment="center"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogout"
+        app:layout_constraintEnd_toEndOf="@+id/userGmail"
+        app:layout_constraintStart_toStartOf="@+id/userGmail"
+        app:layout_constraintTop_toBottomOf="@+id/userGmail" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogout"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/primary_box"
+        android:text="Logout"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintBottom_toTopOf="@+id/btnDashboard"
+        app:layout_constraintEnd_toEndOf="@+id/userDept"
+        app:layout_constraintStart_toStartOf="@+id/userDept"
+        app:layout_constraintTop_toBottomOf="@+id/userDept" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDashboard"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/primary_box"
+        android:text="Dashboard"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15ssp"
+        android:layout_marginBottom="@dimen/_50sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnLogout"
+        app:layout_constraintStart_toStartOf="@+id/btnLogout"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
